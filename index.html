@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./assets/scripts/fakebook.js" type="module"></script>
+    <title>CodeConnect</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="container header-container">
+        <h1>CodeConnect</h1>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#">Friends</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">My ads</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+        <div class="user-icon">
+          <img src="./assets/media/images/men-teacher-stand.png" class="user-icon-img" alt="User Icon" />
+        </div>
+      </div>
+    </header>
+
+    <!--POST-->
+    <div class="container post-area">
+        <form>
+          <div class="textarea-container">
+            <textarea
+              name="post-area"
+              id="post-area"
+              cols="30"
+              rows="10"
+              placeholder="What's on your mind"
+            ></textarea>
+            <div class="post-button-container">
+              <div class="image-input-container">
+                <label for="image-input" id="image-label">
+                  <i class="fas fa-image"></i>
+                  <span id="file-name"></span>
+                </label>
+                <input
+                  type="file"
+                  id="image-input"
+                  name="image-input"
+                  accept="image/*"
+                  aria-label="Upload Image"
+                  title="Upload Image"
+                  placeholder="Choose an image"
+                />
+              </div>
+              <button type="submit" class="post-button">Post</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="container posts-container"></div>
+
+      <!--MODAL-->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>User Account Info</h2>
+        <div class="info-section">
+          <label for="id">ID:</label>
+          <span id="id"></span>
+        </div>
+        <div class="info-section">
+          <label for="name">Name:</label>
+          <span id="name"></span>
+        </div>
+        <div class="info-section">
+          <label for="username">Username:</label>
+          <span id="username"></span>
+        </div>
+        <div class="info-section">
+          <label for="email">Email:</label>
+          <span id="email"></span>
+        </div>
+        <div class="info-section">
+          <label for="pages">Pages:</label>
+          <span id="pages"></span>
+        </div>
+        <div class="info-section">
+          <label for="groups">Groups:</label>
+          <span id="groups"></span>
+        </div>
+        <div class="info-section">
+          <label for="can-monetize">Can Monetize:</label>
+          <span id="can-monetize"></span>
+        </div>
+      </div>
+    </div>
+    </main>
+  </body>
+</html>
