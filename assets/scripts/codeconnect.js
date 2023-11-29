@@ -4,7 +4,6 @@ import { onEvent, getElement, select, selectAll } from "./utils/general.js";
 // importing the subscriber user created in the classes folder
 import { user } from "./classes/User.js";
 
-
 /*
 !------------------------------------------
 !             DOM ELEMENTS

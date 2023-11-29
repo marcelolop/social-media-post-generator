@@ -1,29 +1,5 @@
 "use strict";
 
-/*
-* Create a web page with the following components: a header with 3 elements (see example),
-* a form with a textarea, an input to upload image files and a ‘Post’ button, a section to display 
-* the posts, and a pop-up modal to display user account info.
-* Users can post text messages, photos, or both.
-* Posts display a ‘header’ with profile pic, user’s full name, and date (check popular social 
-* networks for examples).
-* Implement two classes: User (the base/parent class) and Subscriber (the derived/child class).
-* User contains 4 properties: id, name, userName, and email.
-* Subscriber contains 3 properties: pages, groups, and canMonetize.
-* Both classes have private properties, constructor, and getters.
-* User and Subscriber contain a method called getInfo(), which will return information about 
-*the user account. The Subscriber class uses the base class method as part of its own 
-* implementation.
-* Use ES modules and a server, so your classes and utility functions can be placed in separated 
-* files.
-* Create a new Subscriber, providing data for all properties (groups and pages are arrays, 
-* canMonetize is a Boolean). You can enter the data manually.
-* The data to populate the pop-up modal comes from the getInfo() method.
-* Add a README file to your repository on GitHub with a link to your application (the web page).
-• Responsive design is optional
-
-*/
-
 class User {
   #id = "";
   #name = "";

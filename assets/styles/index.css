@@ -47,7 +47,7 @@ header {
     color: #2c81ff;
 }
 
-.user-icon-img{
+.user-icon-img {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
@@ -134,7 +134,7 @@ textarea {
     margin-inline: auto;
 }
 
-.user-icon-name{
+.user-icon-name {
     display: flex;
     align-items: center;
     padding-top: 1rem;
@@ -199,7 +199,7 @@ textarea {
     color: #676767;
     cursor: pointer;
     margin-top: 2rem;
-    font-size:2.5rem;
+    font-size: 2.5rem;
     padding: 0 1rem;
 
     &:hover {
@@ -230,44 +230,101 @@ textarea {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     overflow: auto;
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     background-color: #fff;
     margin: 10% auto;
     padding: 2rem;
     border-radius: 0.5rem;
     max-width: 40rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  }
-  
-  .close-modal {
+}
+
+.close-modal {
     color: #aaa;
     float: right;
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-  }
-  
-  .close-modal:hover,
-  .close-modal:focus {
+}
+
+.close-modal:hover,
+.close-modal:focus {
     color: #000;
     text-decoration: none;
-  }
-  
-  .info-section {
+}
+
+.info-section {
     margin-bottom: 1rem;
-  }
-  
-  label {
+}
+
+label {
     font-weight: bold;
-  }
-  
-  span {
+}
+
+span {
     margin-left: 0.5rem;
-  }
-  
-  h2 {
+}
+
+h2 {
     margin-top: 0;
     margin-bottom: 1rem;
-  }
+}
+
+/* Para dispositivos móveis */
+@media (max-width: 767px) {
+    header{
+        height: auto;
+        padding: 2rem;
+    }
+    
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .post-area,
+    .post-display {
+        width: 100%;
+    }
+
+    .post-image-container {
+        height: 20rem;
+    }
+}
+
+/* Para dispositivos móveis muito pequenos */
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 2rem;
+    }
+
+    .nav-list li a {
+        font-size: 1.5rem;
+    }
+
+    .post-button {
+        font-size: 1.5rem;
+    }
+
+    .user-name,
+    .post-date {
+        font-size: 1.5rem;
+    }
+
+    .post-text {
+        font-size: 1.5rem;
+    }
+
+    .like-button {
+        font-size: 2rem;
+    }
+}
