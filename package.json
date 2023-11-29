@@ -1,0 +1,24 @@
+{
+  "name": "social-media-post-generator",
+  "version": "1.0.0",
+  "description": "The CodeConnect Social Media Post Generator is a JavaScript project that allows users to generate fake social media posts for various platforms.",
+  "main": "codeconnect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "post",
+    "generator",
+    "JavasScript",
+    "HTML",
+    "CSS"
+  ],
+  "author": " Marcelo Lopes",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
