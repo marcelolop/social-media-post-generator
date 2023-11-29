@@ -71,7 +71,7 @@ class User {
   }
 }
 
-class Subscriber extends User {
+export default class Subscriber extends User {
   #pages = [];
   #groups = [];
   #canMonetize = false;
@@ -132,16 +132,13 @@ class Subscriber extends User {
   }
 }
 
-export default Subscriber;
 
-const user = new Subscriber(
+export const user = new Subscriber(
   "4210",
   "John Smith",
   "jsmith",
   "jsmith@example.com",
   ["Codezilla", "Bug Whisperer", "Null Pointer Exceptional", "Infinite Loopers", "404 Found"], // páginas que o usuário segue
-  ["The Semicolonoscopy", "The Heisenbugs", "The Git Pushers", "The Runtime Terrors"], // grupos que o usuário participa
+  ["The Hackers", "The Heisenbugs", "The Git Pushers", "The Runtime Terrors"], // grupos que o usuário participa
   true
 );
-
-export { user };

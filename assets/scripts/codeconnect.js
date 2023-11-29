@@ -107,7 +107,7 @@ function checkAndCreatePost(event) {
     userIconName.classList.add("user-icon-name");
 
     const profilePic = document.createElement("img");
-    profilePic.src = "./assets/media/images/men-teacher-stand.png";
+    profilePic.src = "./assets/media/images/user-image.jpg";
     profilePic.alt = "Profile Pic";
     profilePic.classList.add("profile-pic");
 

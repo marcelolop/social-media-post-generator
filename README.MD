@@ -8,6 +8,6 @@ The CodeConnect Social Media Post Generator is a JavaScript project that allows 
 
 - Create custom social media posts with text, images, and emojis
 
-## See a demo 
+## Demo 
 
 Click [here](https://marcelolop.github.io/social-media-post-generator/) to see the demo.
