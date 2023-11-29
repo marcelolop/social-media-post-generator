@@ -53,7 +53,6 @@ header {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    border: 1px solid #2c81ff;
     cursor: pointer;
 }
 
