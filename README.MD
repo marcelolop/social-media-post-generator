@@ -1,4 +1,4 @@
-# Fakebook Social Media Post Generator
+# CodeConnect Social Media Post Generator
 
 ## Description
 
@@ -43,4 +43,6 @@ The Fakebook Social Media Post Generator is a JavaScript project that allows use
 
 3. Use the provided interface to create and customize your social media posts.
 
+## See a demo 
 
+Click [here](https://marcelolop.github.io/social-media-post-generator/) to see the demo.
