@@ -12,11 +12,6 @@ main {
     min-height: 100dvh;
 }
 
-.container {
-    width: min(100% - 3rem, 120rem);
-    margin-inline: auto;
-}
-
 header {
     background-color: #2d2d2d;
     height: 6rem;
@@ -24,6 +19,12 @@ header {
     justify-content: center;
     align-items: center;
 }
+
+.container {
+    width: min(100% - 3rem, 120rem);
+    margin-inline: auto;
+}
+
 
 .header-container {
     display: flex;
@@ -135,7 +136,6 @@ textarea {
     }
 }
 
-
 #file-name {
     padding: 0 0.2rem;
     font-size: 1.8rem;
@@ -241,7 +241,8 @@ textarea {
     color: #4790ff;
 }
 
-/* Modal styles */
+/** Modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -317,7 +318,6 @@ h2 {
     font-weight: 700;
 }
 
-/* Para dispositivos móveis */
 @media (max-width: 767px) {
     header {
         height: auto;
@@ -346,7 +346,6 @@ h2 {
     }
 }
 
-/* Para dispositivos móveis muito pequenos */
 @media (max-width: 480px) {
     .header-container h1 {
         font-size: 2rem;
