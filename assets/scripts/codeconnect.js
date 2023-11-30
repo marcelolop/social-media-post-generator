@@ -7,7 +7,23 @@
 
 import { onEvent, getElement, select, selectAll } from "./utils/general.js";
 // importing the subscriber user created in the classes folder
-import { user } from "./classes/User.js";
+import { Subscriber } from "./classes/User.js";
+
+
+/*
+!------------------------------------------
+!             USER INFO
+!------------------------------------------*/
+
+const user = new Subscriber(
+  "4210",
+  "John Smith",
+  "jsmith",
+  "jsmith@example.com",
+  ["Codezilla", "Bug Whisperer", "Null Pointer Exceptional", "Infinite Loopers", "404 Found"], 
+  ["The Hackers", "The Heisenbugs", "The Git Pushers", "The Runtime Terrors"], 
+  true
+);
 
 /*
 !------------------------------------------
@@ -19,7 +35,6 @@ const postArea = getElement("post-area");
 const imageInput = getElement("image-input");
 const fileName = getElement("file-name");
 const postButton = select(".post-button");
-const likeButtons = selectAll(".like-button");
 let selectedFile;
 
 /* 
@@ -154,16 +169,26 @@ newPost.appendChild(postContent);
 
 // Add the post image if one was selected
 if (selectedFile) {
-  const postImageContainer = document.createElement("div");
-  postImageContainer.classList.add("post-image-container");
+  const postMediaContainer = document.createElement("div");
+  postMediaContainer.classList.add("post-media-container");
 
-  const postImage = document.createElement("img");
-  postImage.src = URL.createObjectURL(selectedFile);
-  postImage.alt = "Post Image";
-  postImage.classList.add("post-image");
+  if (selectedFile.type.startsWith("image/")) {
+    const postImage = document.createElement("img");
+    postImage.src = URL.createObjectURL(selectedFile);
+    postImage.alt = "Post Image";
+    postImage.classList.add("post-media");
 
-  postImageContainer.appendChild(postImage);
-  newPost.appendChild(postImageContainer);
+    postMediaContainer.appendChild(postImage);
+  } else if (selectedFile.type.startsWith("video/")) {
+    const postVideo = document.createElement("video");
+    postVideo.src = URL.createObjectURL(selectedFile);
+    postVideo.classList.add("post-media");
+    postVideo.controls = true;
+
+    postMediaContainer.appendChild(postVideo);
+  }
+
+  newPost.appendChild(postMediaContainer);
 }
 
 // Add the like button to the new post

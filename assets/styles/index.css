@@ -150,8 +150,8 @@ textarea {
 /**Post display*/
 
 .post-display {
-    background-color: #e8e8e8;
-    padding: 1rem;
+    background-color: #ffffff;
+    padding: 2rem;
     border-radius: 0.6rem;
     margin: 2rem 0;
     width: 60rem;
@@ -162,9 +162,7 @@ textarea {
 .user-icon-name {
     display: flex;
     align-items: center;
-    padding-top: 1rem;
     gap: 1rem;
-    margin-bottom: 2rem;
 }
 
 .post-header {
@@ -182,16 +180,20 @@ textarea {
     cursor: pointer;
 }
 
-.post-image-container {
-    width: 100%;
-    height: 40rem;
-}
-
-.post-image {
+.post-media-container {
     width: 100%;
     height: 100%;
-    border-radius: 1rem;
+}
+
+.post-media-container video {
     object-fit: cover;
+}
+
+.post-media {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    object-fit: contain;
     object-position: center;
     cursor: pointer;
 }

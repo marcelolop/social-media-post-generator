@@ -120,25 +120,15 @@ export default class Subscriber extends User {
   }
 
   getInfo() {
-    return {
-      id: this.id,
-      name: this.name,
-      userName: this.userName,
-      email: this.email,
-      pages: this.#pages,
-      groups: this.#groups,
-      canMonetize: this.#canMonetize,
+    const parentInfo = super.getInfo()
+      return {
+        ...parentInfo,
+        pages: this.#pages,
+        groups: this.#groups,
+        canMonetize: this.#canMonetize
     };
   }
 }
 
 
-export const user = new Subscriber(
-  "4210",
-  "John Smith",
-  "jsmith",
-  "jsmith@example.com",
-  ["Codezilla", "Bug Whisperer", "Null Pointer Exceptional", "Infinite Loopers", "404 Found"], 
-  ["The Hackers", "The Heisenbugs", "The Git Pushers", "The Runtime Terrors"], 
-  true
-);
+export { Subscriber };
