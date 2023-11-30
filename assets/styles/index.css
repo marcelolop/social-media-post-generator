@@ -119,18 +119,28 @@ textarea {
 }
 
 #image-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
     font-size: 2.5rem;
     font-weight: 700;
     padding: 1rem;
-    color: #bababa;
+    color: #8e8e8e;
+
+    &:hover {
+        color: #cdcdcd;
+    }
 }
 
+
 #file-name {
+    padding: 0 0.2rem;
     font-size: 1.8rem;
     font-weight: 700;
     color: #bababa;
-    margin: 0 1rem;
     cursor: pointer;
 }
 
@@ -242,6 +252,25 @@ textarea {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     overflow: auto;
+    cursor: pointer;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+
+.user-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
 }
 
 .modal-content {
@@ -251,6 +280,7 @@ textarea {
     border-radius: 0.5rem;
     max-width: 40rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    cursor: default;
 }
 
 .close-modal {
@@ -273,6 +303,7 @@ textarea {
 
 label {
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 span {
@@ -280,8 +311,10 @@ span {
 }
 
 h2 {
-    margin-top: 0;
-    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 /* Para dispositivos móveis */
