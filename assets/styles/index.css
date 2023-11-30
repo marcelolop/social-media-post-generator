@@ -211,7 +211,7 @@ textarea {
     margin: 1rem 0;
     white-space: pre-wrap;
     word-wrap: break-word;
-    padding: 0 1rem;
+    padding: 0 0.3rem;
 }
 
 .post-date {
