@@ -1,5 +1,10 @@
 "use strict";
 
+/*
+!------------------------------------------
+!              IMPORTS
+!------------------------------------------*/
+
 import { onEvent, getElement, select, selectAll } from "./utils/general.js";
 // importing the subscriber user created in the classes folder
 import { user } from "./classes/User.js";
@@ -9,7 +14,6 @@ import { user } from "./classes/User.js";
 !             DOM ELEMENTS
 !------------------------------------------*/
 
-// Dom elements
 const postForm = select(".post-area form");
 const postArea = getElement("post-area");
 const imageInput = getElement("image-input");
@@ -166,7 +170,7 @@ if (selectedFile) {
 newPost.appendChild(likeButton);
 
 // Add the new post to the page
-document.querySelector(".posts-container").appendChild(newPost);
+select(".posts-container").appendChild(newPost);
 
 // Reset the form
 postForm.reset();
@@ -179,9 +183,9 @@ onEvent("submit", postForm, checkAndCreatePost);
 
 //function to like a post and input the class liked to the like button
 
-
 document.addEventListener('click', function(event) {
   if (event.target.matches('.like-button')) {
     event.target.classList.toggle('liked');
   }
 });
+

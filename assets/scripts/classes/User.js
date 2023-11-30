@@ -138,7 +138,7 @@ export const user = new Subscriber(
   "John Smith",
   "jsmith",
   "jsmith@example.com",
-  ["Codezilla", "Bug Whisperer", "Null Pointer Exceptional", "Infinite Loopers", "404 Found"], // páginas que o usuário segue
-  ["The Hackers", "The Heisenbugs", "The Git Pushers", "The Runtime Terrors"], // grupos que o usuário participa
+  ["Codezilla", "Bug Whisperer", "Null Pointer Exceptional", "Infinite Loopers", "404 Found"], 
+  ["The Hackers", "The Heisenbugs", "The Git Pushers", "The Runtime Terrors"], 
   true
 );
